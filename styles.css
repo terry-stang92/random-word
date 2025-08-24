@@ -1,0 +1,97 @@
+/* 🔹 Reset básico */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+/* 🔹 Estilos globales del body */
+ body {
+  background-image: url('bg-guess-the-word-small.jpg');
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} 
+
+/* 🔹 Contenedor principal del juego */
+ .container {
+  background: #1e1e2e;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+} 
+
+/* 🔹 Header con logo */
+ .title img {
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+} 
+
+/* 🔹 Caja rectangular de palabra revuelta */
+.output #scrambled {
+  background: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  letter-spacing: .5rem;
+  margin-bottom: 1.5rem;
+} 
+
+/* 🔹 Estado (tries y mistakes) */
+.status {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+} 
+
+/* 🔹 Contenedor de cajitas (slots de respuesta) */
+.answer #slots {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+} 
+
+/* 🔹 Estilos de cada cajita (slot) */
+.slot {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #888;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  background: #222;
+  color: #fff;
+} 
+
+/* 🔹 Contenedor de los botones */
+ .controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+} 
+
+/* 🔹 Botones principales */
+ .controls button {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: .6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background .2s;
+} 
+
+/* 🔹 Efecto hover de botones */
+.controls button:hover {
+  background: #9f67f6;
+} 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Scramble</title>
+  <link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body>
+  <main id="game" class="container">
+
+  
+    <header class="title">
+     
+      <img src="word-scramblle-logo.svg" alt="Word Scramble" />
+    </header>
+
+    
+    <section class="output">
+      <div id="scrambled">r e l o w f</div>
+    </section>
+
+ 
+    <section class="status" aria-live="polite">
+      <div class="tries">
+        <span class="label">Tries:</span>
+        <output id="tries-count">5/5</output>
+      </div>
+      <div class="mistakes">
+        <span class="label">Mistakes:</span>
+        <output id="mistakes-count">0</output>
+      </div>
+    </section>
+
+    <section class="answer">
+      <div id="slots" data-length="6">
+        <div class="slot" data-slot="0"></div>
+        <div class="slot" data-slot="1"></div>
+        <div class="slot" data-slot="2"></div>
+        <div class="slot" data-slot="3"></div>
+        <div class="slot" data-slot="4"></div>
+        <div class="slot" data-slot="5"></div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <button id="btn-random" type="button">Random</button>
+      <button id="btn-reset" type="button">Reset</button>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
