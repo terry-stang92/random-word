@@ -10,8 +10,8 @@ const btnReset    = document.getElementById("btn-reset");
 let currentWord = "";
 let triesLeft   = 5;
 let mistakes    = 0;
-let inputIndex  = 0;           // pointer to next empty slot
-let guessArray  = [];          // letters the user typed (same length as word)
+let inputIndex  = 0;           
+let guessArray  = [];          
 
 // ====== UTIL ======
 function shuffle(word) {
@@ -55,7 +55,7 @@ function updateStatus() {
 
 
 async function newGame() {
-  currentWord = await fetchWord();              // or pick from your array
+  currentWord = await fetchWord();            
   scrambledEl.textContent = shuffle(currentWord);
 
   triesLeft = 5;
@@ -77,7 +77,7 @@ function backspace() {
 }
 
 function typeLetter(letter) {
-  if (inputIndex >= currentWord.length) return;   // already full
+  if (inputIndex >= currentWord.length) return; 
   guessArray[inputIndex] = letter;
   slotsEl.children[inputIndex].textContent = letter;
   inputIndex++;
@@ -132,4 +132,5 @@ btnReset ?.addEventListener("click", newGame);
 
 // ====== START ======
 newGame();
+
 
